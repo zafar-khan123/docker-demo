@@ -4,4 +4,4 @@ WORKDIR /var/www/html
 RUN tar -xvzf apache-tomcat-9.0.63.tar.gz
 RUN cp -rvf apache-tomcat-9.0.63/*
 EXPOSE 8080
-CMD ["/opt/bin/catalina.sh", "run"]
+CMD ["/usr/sbin/httpd", "run"]
